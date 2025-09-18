@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-ag" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>99Rhythm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      /* Custom scrollbar for a more brutalist feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+        border-left: 1px solid #262626;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #525252;
+        border: 1px solid #000;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a3a3a3;
+      }
+
+      /* Brutalist overrides */
+      html {
+        scroll-behavior: auto !important;
+        -webkit-font-smoothing: none;
+        -moz-osx-font-smoothing: none;
+        font-smoothing: none;
+      }
+
+      body {
+        background-color: #000;
+      }
+
+      ::selection {
+        background: #4ade80; /* green-400 */
+        color: #000;
+      }
+
+      .blinking-cursor::after {
+        content: '_';
+        animation: blink 1s step-end infinite;
+      }
+
+      @keyframes blink {
+        from, to {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-wjqR7Q9v.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
